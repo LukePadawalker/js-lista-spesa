@@ -1,12 +1,14 @@
 console.log("JS OK");
 
 
-const array = ["burro", "latte", "uova", "pane", "prosciutto",]
+const array = ["burro", "latte", "uova", "pane", "prosciutto", "grana_padano", "biscotti"];
+
+let finalMessage = document.getElementById("paragraph").innerText;
 
 let counter = 0;
 
 while (counter < array.length){
-    document.getElementById("paragraph").innerText = array[counter];
+    finalMessage += array[counter];
 
     counter += 1;
 }
