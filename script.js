@@ -1,14 +1,17 @@
 console.log("JS OK");
 
-
+// create the array
 const array = ["burro", "latte", "uova", "pane", "prosciutto", "grana_padano", "biscotti"];
 
-let finalMessage = document.getElementById("paragraph").innerText;
 
+// declaration of functions
+let finalMessage = document.getElementById("paragraph");
 let counter = 0;
 
+// creating the main while cicle
 while (counter < array.length){
-    finalMessage += array[counter];
-
+    // appending the elements
+    finalMessage.innerText += array[counter];
+    // exit condition
     counter += 1;
 }
