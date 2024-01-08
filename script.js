@@ -11,7 +11,7 @@ let counter = 0;
 // creating the main while cicle
 while (counter < array.length){
     // appending the elements
-    finalMessage.innerText += array[counter];
+    finalMessage.innerText = finalMessage.innerText + " " + array[counter];
     // exit condition
     counter += 1;
 }
